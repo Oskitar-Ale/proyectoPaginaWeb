@@ -1,0 +1,163 @@
+*{  padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    background-color: aqua;
+    max-width: 100rem;
+    margin: 0 auto;
+    
+
+}
+/*-----------navegacion--------------*/
+.header-container{
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    width: 100%;
+    height: 7rem;
+    background-color: blue;
+    
+    
+    outline: .125rem black solid;
+
+
+}
+
+.container-nav__ul{
+
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    background-color: red;
+
+
+    outline: .125rem black solid;
+
+}
+
+li{
+    
+    margin:auto 2rem;
+    list-style: none;
+    
+    outline: 2px black solid;
+}
+
+
+p{  
+    background-color: bisque;
+
+    outline: 2px black solid;
+
+}
+a{
+    background-color: bisque;
+
+}
+
+button{
+    width:6.5em;
+    height: 2em;
+
+}
+
+
+/*---------------main---------------*/
+
+
+
+
+
+
+/*-------------section 1-------------*/
+
+
+
+.main-container{
+
+    background-color:rgba(255, 0, 0, 0.847) ;
+    width: 100%;
+    height: 100%;
+    
+    outline: .125rem black solid;
+
+}
+
+
+
+.content-section-one{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(12, 186, 79, 0.847) ;
+    width: 100%;
+    height: 40rem;
+
+}
+
+
+.content-slide div{
+
+    background-color:bisque;
+    
+    outline: .125rem black solid;
+}
+
+
+.content-slide__p{
+
+    text-align: center;
+    width: 30%;
+
+}
+
+
+
+
+
+
+/*-------------section 2-------------*/
+
+
+.content-section-two{
+    background-color: coral;
+    width: 100%;
+    height: 40rem;
+
+    outline: .125rem black solid;
+
+}
+
+/*-------------section 3-------------*/
+
+.content-section-three{
+    background-color:pink;
+    width: 100%;
+    height: 40rem;
+
+    outline: .125rem black solid;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----footer-----*/
+
+.footer-container{
+    width: 100%;
+    height: 400px;
+    outline: 2px solid black;
+    background-color: rgba(54, 54, 109, 0.679);
+}
