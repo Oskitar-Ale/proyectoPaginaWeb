@@ -1,13 +1,15 @@
 *{  padding: 0;
     margin: 0;
-}
-body{
-    width: 100%;
-    background-color: aqua;
-    max-width: 100rem;
-    margin: 0 auto;
-    
+    box-sizing: border-box;
 
+}
+@font-face {
+    font-family: 'nightmare';
+    src: url(Nightmare\ Before\ Christmas.ttf);
+}
+
+body{
+    width: 100%;    
 }
 /*-----------navegacion--------------*/
 .header-container{
@@ -15,11 +17,12 @@ body{
     justify-content: space-around ;
     align-items: center;
     width: 100%;
-    height: 7rem;
-    background-color: blue;
+
+
+    background-color: rgba(0, 0, 10, 0.982);
     
     
-    outline: .125rem black solid;
+    margin: 0 auto;
 
 
 }
@@ -29,7 +32,6 @@ body{
     display: flex;
     justify-content: end;
     width: 100%;
-    background-color: red;
 
 
     outline: .125rem black solid;
@@ -44,21 +46,43 @@ li{
     outline: 2px black solid;
 }
 
+.header-container__img{
 
-p{  
-    background-color: bisque;
+    height: 100%;
+    padding: 2px .125rem;
+}
+.header-container__img--logo{
+    width: 12em;
 
-    outline: 2px black solid;
 
 }
-a{
-    background-color: bisque;
 
+
+
+.container-nav__ul--a{
+
+    text-decoration: none;
+    color: aliceblue;
+    font-family:"nightmare" ;
+    font-size: 2.3em;
+}
+.content-btn{
+    display: flex;
+    align-items: center;
+    display: block;
+    position: relative;
 }
 
 button{
-    width:6.5em;
-    height: 2em;
+    font-family: 'nightmare';
+    font-size: 2.3em;
+    color: #ff5003;
+    background-color: transparent;
+    border: 2px #ff5003 dashed;
+    border-radius: 30px;
+    width: 4.5em;
+    height: 1.9em;
+    text-align: center;
 
 }
 
@@ -76,7 +100,7 @@ button{
 
 .main-container{
 
-    background-color:rgba(255, 0, 0, 0.847) ;
+    background-color:rgba(0, 0, 0, 0.847) ;
     width: 100%;
     height: 100%;
     
@@ -91,28 +115,30 @@ button{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:rgba(12, 186, 79, 0.847) ;
+    background-color:rgba(0, 0, 0, 0.847) ;
     width: 100%;
-    height: 40rem;
+    height: 45rem;
 
 }
 
 
 .content-slide div{
 
-    background-color:bisque;
     
-    outline: .125rem black solid;
+    outline: .125rem rgb(243, 10, 10) solid;
 }
 
+.content-section-one__img-calabaza{
+    width: 30em;
+    outline: .125rem rgb(219, 7, 7) solid;
 
+}
 .content-slide__p{
-
+    color: #ff5003;
     text-align: center;
     width: 30%;
-
+    outline: .125rem black solid;
 }
-
 
 
 
@@ -124,7 +150,7 @@ button{
 .content-section-two{
     background-color: coral;
     width: 100%;
-    height: 40rem;
+    height: 50rem;
 
     outline: .125rem black solid;
 
