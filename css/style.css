@@ -12,14 +12,19 @@
     font-family: 'bloodlust';
     src: url('./bloodlust.ttf') format('truetype');
 }
-
+ 
 body{
+    width: 100%;
+    height: 100%;
+
+
 }
+
 /*-----------navegacion--------------*/
 
 header{
     width: 100%; 
-    background-color: rgba(9, 9, 9, 0.982);
+    background-color: rgb(9, 9, 9);
     min-height:7rem;
     margin: 0 auto;
     padding: 21px 0 0 0;
@@ -161,17 +166,17 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:rgba(117, 203, 25, 0.847) ;
+    background-color:rgb(0, 0, 0) ;
     width: 100%;
     height: 45rem;
 
 }
 
 
-.content-slide div{
+/* .content-slide div{
 
     
-}
+} */
 
 .content-section-one__img-calabaza{
 
@@ -211,25 +216,23 @@ header{
 
 }
 .content-slide-one__text  span:nth-child(1) {
-    animation: flicker 1s linear infinite;
-  }
-  
-  .content-slide-one__text  span:nth-child(2) {
-    animation: flicker 1s linear infinite;
+    animation: flicker 2s linear infinite;
   }
   
   .content-slide-one__text  span:nth-child(3) {
-    animation: flicker 1s linear infinite;
+    animation: flicker 3s linear infinite;
   }
-  .content-slide-one__text  span:nth-child(4) {
-    animation: flicker 1s linear infinite;
+  
+  .content-slide-one__text  span:nth-child(6) {
+    animation: flicker 2s linear infinite;
   }
-  .content-slide-one__text  span:nth-child(7) {
-    animation: flicker 1s linear infinite;
+  .content-slide-one__text  span:nth-child(9) {
+    animation: flicker 3s linear infinite;
   }
-  .content-slide-one__text  span:nth-child(8) {
-    animation: flicker 1s linear infinite;
+  .content-slide-one__text  span:nth-child(12) {
+    animation: flicker 2s linear infinite;
   }
+
   @keyframes flicker {
     0% {
       opacity: 0.2;
@@ -249,19 +252,149 @@ header{
     100% {
       opacity: 1;
     }
+    100% {
+        opacity: 0.2;
+      }
+      80% {
+        opacity: 1;
+      }
+      60% {
+        opacity: 0.2;
+      }
+      40% {
+        opacity: 1;
+      }
+      20% {
+        opacity: 0.2;
+      }
+      10% {
+        opacity: 1;
+      }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------section 2-------------*/
 
 
 .content-section-two{
+    background-color: blue;
+    width: 100%;
+    height: 10rem;
+}
+
+/*texto intermediario*/
+
+.content-section-two__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+    background-color: #000000ad;
+    outline: black 2px solid;
+    margin: 0 auto;
+}
+
+
+.content-section-two__text p{
+    font-size: 2.5em;
+    color: #ff5003;
+
+    font-family: 'nightmare';
 
 }
+
+
+
+
+
+/* 
+.content-section-two{
+
+} */
+
+
+
 
 /*-------------section 3-------------*/
 
-.content-section-three{
+  /******container ******/
 
+.content-section-three{
+    background-color: blueviolet;
+    width: 100%;
+    height: 50rem;
+    padding: 4rem 0;
+
+
+
+}
+.content-section-three__container{
+    margin: 0 50px;
+}
+
+
+  /******title ******/
+
+.content-section-three__title{
+    display: flex;
+    justify-content: center;
+    color: white;
+
+}
+
+  /******menu ******/
+
+.content-section-three__menu{
+    display: flex;
+    justify-content: center;
+}
+.content-section-three__menu li{
+    color: white;
+
+    list-style-type: none;
+    padding: 0 0 0 1rem;
+
+}
+
+  /******cards ******/
+.content-section-three__container-card{
+
+    width: 100%;
+
+    
+}
+.container-card-list{ 
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+
+.content-card{
+    list-style-type: none;
+
+    width: 190px;
+    height: 254px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
 
 }
 
@@ -270,17 +403,20 @@ header{
 
 
 
-
-
-
-
+   /*seccion 4*/
+.content-section-four{
+    width: 100%;
+    height: 100rem;
+    background-color: green;
+}
 
 
 
 /*-----footer-----*/
 
 .footer-container{
-
+    height: 10rem;
+    background-color: rgb(247, 23, 135);
 }
 
 /*@MEDIA QUERY*/
@@ -332,7 +468,7 @@ header{
         align-items: center;
         margin-right: 40px;
         list-style: none;
-        background-color: red;
+        background-color: #ff5003;
         position: absolute;
         left: 0;
         top: 110px;
