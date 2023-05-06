@@ -5,87 +5,134 @@
 }
 @font-face {
     font-family: 'nightmare';
-    src: url(Nightmare\ Before\ Christmas.ttf);
+    src: url('./Nightmare Before Christmas.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bloodlust';
+    src: url('./bloodlust.ttf') format('truetype');
 }
 
 body{
-    width: 100%;    
 }
 /*-----------navegacion--------------*/
-.header-container{
+
+header{
+    width: 100%; 
+    background-color: rgba(9, 9, 9, 0.982);
+    min-height:7rem;
+    margin: 0 auto;
+    padding: 21px 0 0 0;
+
+
+    
+
+}
+
+
+.container-nav{
     display: flex;
-    justify-content: space-around ;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
-
-
-    background-color: rgba(0, 0, 10, 0.982);
-    
-    
+    max-width: 87.5rem;
     margin: 0 auto;
 
-
 }
 
-.container-nav__ul{
 
+
+
+
+
+.container__img{
     display: flex;
-    justify-content: end;
-    width: 100%;
-
-
-    outline: .125rem black solid;
 
 }
 
-li{
-    
-    margin:auto 2rem;
+
+
+.container-img--logo{
+    width: 14em;
+    padding: 0 40px;
+    z-index: 3;
+
+
+}
+
+.nav-link{
     list-style: none;
-    
-    outline: 2px black solid;
-}
-
-.header-container__img{
-
-    height: 100%;
-    padding: 2px .125rem;
-}
-.header-container__img--logo{
-    width: 12em;
-
-
 }
 
 
-
-.container-nav__ul--a{
-
-    text-decoration: none;
-    color: aliceblue;
-    font-family:"nightmare" ;
-    font-size: 2.3em;
-}
-.content-btn{
+.container-menu{
     display: flex;
+    margin-right: 40px;
     align-items: center;
-    display: block;
-    position: relative;
 }
 
-button{
+.container-nav__item{
+    width: max-content;
+    font-family:"bloodlust" ;
+    font-size: 2.3em;
+    padding: 0 4rem 0 0 ;
+    z-index: 5;
+
+}
+.container-nav__a{
+    color: aliceblue;
+    text-decoration: none;
+
+
+}
+.container-nav__a:hover{
+    color: #ff5003;
+
+}
+
+
+.content-btn{
+    z-index: 8;
+
+}
+
+
+.btn-contacto{
+    text-decoration: none;
+
     font-family: 'nightmare';
     font-size: 2.3em;
+    padding: .2em .625rem .1em .625rem ;
     color: #ff5003;
-    background-color: transparent;
+
     border: 2px #ff5003 dashed;
     border-radius: 30px;
-    width: 4.5em;
-    height: 1.9em;
-    text-align: center;
+    z-index: 15;
 
 }
 
+
+.nav-toggle{
+    background: none;
+    border: none;
+    font-size: 2.25em;
+    padding: 0 1.25em;
+    line-height: 3.75rem;
+    
+    display: none;
+
+    cursor: pointer;
+    z-index: 25;
+
+}
+
+.tela{
+    
+    position: absolute;
+    top: 0 ;
+    right:0;
+    z-index: 0;
+
+}
 
 /*---------------main---------------*/
 
@@ -100,11 +147,10 @@ button{
 
 .main-container{
 
-    background-color:rgba(0, 0, 0, 0.847) ;
+    background-color:rgb(230, 12, 12) ;
     width: 100%;
-    height: 100%;
+    height: 50rem;
     
-    outline: .125rem black solid;
 
 }
 
@@ -115,7 +161,7 @@ button{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:rgba(0, 0, 0, 0.847) ;
+    background-color:rgba(117, 203, 25, 0.847) ;
     width: 100%;
     height: 45rem;
 
@@ -125,45 +171,97 @@ button{
 .content-slide div{
 
     
-    outline: .125rem rgb(243, 10, 10) solid;
 }
 
 .content-section-one__img-calabaza{
+
     width: 30em;
-    outline: .125rem rgb(219, 7, 7) solid;
+    opacity: 0.8;
+    animation: float 3s ease-in-out infinite;
 
 }
-.content-slide__p{
+
+
+@keyframes float {
+    0% {
+      transform: translateY(0) scaleX(-1);
+    }
+    50% {
+      transform: translateY(-20px) scaleX(-1);
+    }
+    100% {
+      transform: translateY(0) scaleX(-1);
+    }
+}
+  
+
+.content-slide-one__text{
     color: #ff5003;
     text-align: center;
-    width: 30%;
-    outline: .125rem black solid;
+    width: 50%;
 }
+.content-slide-one__text span{
+    font-size: 2.5em;
+    font-family: "nightmare";
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: blink 1s infinite;
 
 
-
-
+}
+.content-slide-one__text  span:nth-child(1) {
+    animation: flicker 1s linear infinite;
+  }
+  
+  .content-slide-one__text  span:nth-child(2) {
+    animation: flicker 1s linear infinite;
+  }
+  
+  .content-slide-one__text  span:nth-child(3) {
+    animation: flicker 1s linear infinite;
+  }
+  .content-slide-one__text  span:nth-child(4) {
+    animation: flicker 1s linear infinite;
+  }
+  .content-slide-one__text  span:nth-child(7) {
+    animation: flicker 1s linear infinite;
+  }
+  .content-slide-one__text  span:nth-child(8) {
+    animation: flicker 1s linear infinite;
+  }
+  @keyframes flicker {
+    0% {
+      opacity: 0.2;
+    }
+    20% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0.2;
+    }
+    60% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 /*-------------section 2-------------*/
 
 
 .content-section-two{
-    background-color: coral;
-    width: 100%;
-    height: 50rem;
-
-    outline: .125rem black solid;
 
 }
 
 /*-------------section 3-------------*/
 
 .content-section-three{
-    background-color:pink;
-    width: 100%;
-    height: 40rem;
 
-    outline: .125rem black solid;
 
 }
 
@@ -182,8 +280,133 @@ button{
 /*-----footer-----*/
 
 .footer-container{
-    width: 100%;
-    height: 400px;
-    outline: 2px solid black;
-    background-color: rgba(54, 54, 109, 0.679);
+
+}
+
+/*@MEDIA QUERY*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px){
+    body{
+    }
+    header{ 
+        height: 1rem;
+        outline:2px solid white;
+        background-color: #000000;
+    }
+    
+    .container-nav{
+        justify-content: space-between;
+
+
+    }
+
+    
+    .container-menu{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 40px;
+        list-style: none;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 110px;
+        width: 100%;
+        height: calc(100% - 91px);
+        overflow-y:auto;
+        
+        top:-100%;
+
+
+        transition: all 1s;
+        z-index: -1;
+
+    }
+  
+    
+    .container-img--logo{
+        width: 13em;
+        padding: 0 2.5rem;
+        margin: 0 0 0 2.5rem;
+        
+    
+    }
+
+    
+    
+    .container-nav__item{
+        width: max-content;
+        font-family:"nightmare" ;
+        font-size: 2.3em;
+        padding: 10px 0;        
+    }
+    .container-nav__a{
+        color: aliceblue;
+        text-decoration: none;
+    
+    }
+    .container-nav__a:hover{
+        color: #ff5003;
+    }
+    
+    
+    .content-btn{
+        
+    }
+    
+    
+    .btn-contacto{
+        text-decoration: none;
+    
+        font-family: 'nightmare';
+        font-size: 2.3em;
+        padding: .2em .625rem .1em .625rem ;
+        color: #ff5003;
+    
+        border: 2px #ff5003 dashed;
+        border-radius: 30px;
+    
+    }
+    .nav-toggle{
+    
+        margin: 0 2.5rem 0 0 ;
+
+        display: block; 
+    }
+    
+    .nav-menu__visible{
+        top: 11%;
+        
+    }
+    
+    .main-container{
+        position: relative;
+        z-index: -2;
+    }
+
 }
