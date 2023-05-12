@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/f91f847224.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./img/logo-mini.ico" type="image/x-icon">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <title>Boo-tiful Bites</title>
 </head>
@@ -101,6 +102,15 @@
                     ¡Que comience la fiesta de Halloween!               
                 </p>
             </div> 
+            <div class="content-section-three__content-about">
+                <div>
+                    <p>asdsadasdsad</p>
+                </div>
+                <div>
+                    <p>oaosdasdas</p>
+                </div>
+            </div>
+
         </section>
         <!-- <section class="content-section-four">
             <div>
@@ -267,24 +277,20 @@
         </section>
         <section class="content-section-eight">
             
-            <div class="content-contact1">
-                <img class="content-contact1__img-ghost" src="./img/fantasma.png" alt="">
-            </div>
+            <!-- <div class="content-contact1">
+            </div> -->
+            <form class="content-contact3">
 
-            <div  class="container-contact">
-                <div class="content-contact2">
-                    <div class="content-contact2__ubicacion"><i class="fa-solid fa-location-dot"></i>Lorem, ipsum dolor.</div>
-                    <div class="content-contact2__numero"><i class="fa-solid fa-phone"></i>7451565525696</div>
-                    <div class="content-contact2__horario"><i class="fa-solid fa-phone"></i>Lorem ipsum dol. Dolor, et.</div>
-                </div>
-                <div class="content-contact3">
-                    <form action="">Nombre<input  type="text" placeholder="Ingresa tu nombre"></form>
-                    <form action="">Email<input type="email" placeholder="Ingresa tu correo"></form>
-                    <form action="">Contenido<input class="content-contact3--contenido" type="text" placeholder="Ingresa un mensaje"></form>
-                    <input id="sutmit" type="submit">
-                </div>
+                <input  type="text" placeholder="Tu nombre" required="required" id="nombre" name="nombre">
+                <input type="email" placeholder="Tu correo" required="required" id="correo" name="correo">
+                <input type="text" placeholder="Tu telefono" required="required" id="telefono" name="telefono">
 
-            </div>
+                <textarea class="content-contact3--contenido" type="text" placeholder="mensaje" required="required" id="correo" name="correo"></textarea>
+                
+                <input id="sutmit" type="submit">
+
+            </form>  
+            <div id="map"></div>
 
         </section>
     </main>
@@ -373,9 +379,13 @@
     </footer>
     <script src="./js/index.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/maps.js"></script>
     
+	<script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB-o-kUBcV8GESv8x2nulNTqCkkFBB4u8&callback=iniciarMap"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </body>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </html>
