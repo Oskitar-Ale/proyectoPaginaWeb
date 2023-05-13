@@ -22,28 +22,30 @@
             </a>
             <button class="nav-toggle">
                 
-                <i class="fa-solid fa-bars" style="color: #ff5003;"></i>
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
             </button>
             <ul class="container-menu">
 
-                <li class="container-nav__item nav-link">
-                    <a class="container-nav__a " href="index.html">Inicio</a>
+                <li class="container-nav__item nav-link" >
+                    <a class="container-nav__a " href="#" id="inicio" data-section="0">Inicio</a>
                 </li>
 
                 <li class="container-nav__item nav-link">
-                    <a class="container-nav__a" href="#">Quiénes somos</a>
+                    <a class="container-nav__a" href="#" id="quienes-somos" data-section="1">Quiénes somos</a>
+                </li>
+                <li class="container-nav__item nav-link">
+                    <a class="container-nav__a" href="#" id="productos" data-section="2">Productos</a>
+                </li>
+                <li class="container-nav__item nav-link">
+                    <a class="container-nav__a" href="#" id="promociones" data-section="3">Promociones</a>
+                </li>
+                <li class="container-nav__item nav-link">
+                    <a class="container-nav__a" href="#" id="servicios" data-section="4">Servicios</a>
                 </li>
 
-                <li class="container-nav__item nav-link">
-                    <a class="container-nav__a" href="#">Servicios</a>
-                </li>
-
-                <li class="container-nav__item nav-link">
-                    <a class="container-nav__a" href="#">Galerias</a>
-                </li>
 
                 <div class="content-btn ">
-                    <a class="btn-contacto" href="#"> Contacto</a>
+                    <a class="btn-contacto" href="#" id="contactos" data-section="5"> Contacto</a>
                 </div>
             </ul>
         </nav>
@@ -58,7 +60,7 @@
     <main class="main-container">
         <!---SLIDERS-->
 
-        <section class="content-section-one">
+        <section class="content-section-one" >
             <div class="content-section-one__slider">
                 <div class="content-slide">
                     <img class="slider-img" src="./img/slider4.jpg" alt="img1">
@@ -91,7 +93,7 @@
 
 
         <!---QUIENES SOMOS--> 
-        <section class="container-quienes-somos">
+        <section class="container-quienes-somos" >
 
             <!---murcielagos-de-fondo-->
             <div class="bats">
@@ -109,9 +111,7 @@
             <!--titulo principal-->
             <div class="title-principal">
                 <img class="img-murcielago" src="./img/murcielago2.png" alt="">
-                <p>
-                    ¡Que comience la fiesta de Halloween!               
-                </p>
+
             </div> 
             <div class="content-section-three__content-about">
                 <!--animacion-fantasmas-->
@@ -138,16 +138,16 @@
             <div>
                 <ul class="container-list-menu">
                     <li>
-                        dulces
+                        Dulces
                     </li>
                     <li>
-                        mascaras
+                        Mascaras
                     </li>
                     <li>
-                        disfraces de mascota 
+                        Disfraces de mascota 
                     </li>
                     <li>
-                        disfraces de niños
+                        Disfraces de niños
                     </li>
                 </ul> 
             </div>
@@ -212,8 +212,8 @@
             <img class="img-murcielago" src="./img/murcielago2.png" alt="">
             <h1>promociones</h1>
             <!---video-->
-            <video controls poster="/img/poster-promo.jpg">
-                <source src="/img/halloween.mp4" type="video/mp4">
+            <video controls poster="./img/poster-promo.jpg">
+                <source src="./img/halloween.mp4" type="video/mp4">
                 Tu navegador no soporta la etiqueta video.
             </video>
         </section>
@@ -360,7 +360,7 @@
                 </li>
             </ul>
         </div>
-        <img class="footer-img" src="/img/footer-img.png" alt="">
+        <img class="footer-img" src="./img/footer-img.png" alt="">
     </footer>
 
 
@@ -370,6 +370,9 @@
     <script src="./js/Form-contact.js"></script>
     <script src="./js/maps.js"></script>
 	<script src="./script.js"></script>
+    <script src="./js/scroollTo.js"></script>
+    <script src="./js/ani-murcielagos.js"></script>
+    <script src="./js/nav-scroll.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB-o-kUBcV8GESv8x2nulNTqCkkFBB4u8&callback=iniciarMap"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

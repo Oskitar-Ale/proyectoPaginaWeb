@@ -152,7 +152,6 @@ header{
     font-size: 2.25em;
     padding: 0 1.25em;
     line-height: 3.75rem;
-    
     display: none;
 
     cursor: pointer;
@@ -364,6 +363,7 @@ header{
 .content-section-three__content-about .side-text h1{
     font-size: 4em;
     font-family: var(--font2);
+    color: #ff5003;
 }
 
 .content-section-three__content-about .side-text p{
@@ -448,7 +448,11 @@ header{
     align-items: center;
 
 }
+.title-productos h1{
+    font-family: var(--font2);
+    font-size: 4em;
 
+}
 
 
   /******menu ******/
@@ -460,6 +464,7 @@ header{
 .container-list-menu li{
     font-size: 22px;
     color: rgb(255, 255, 255);
+    font-weight: bold;
 
     list-style-type: none;
     padding: 0 0 0 1rem;
