@@ -11,10 +11,11 @@
     <title>Boo-tiful Bites</title>
 </head>
 <body>
-                        <!--navegacion-->
+
+    <!--navegacion-->
     <header>
         <img class="tela" src="./img/tela-header.png" alt="">
-        <nav class="container-nav ">
+        <nav class="container-nav">
 
             <a class="container__img nav-link" href="#">
                 <img class="container-img--logo" src="./img/logo.png" alt="">
@@ -46,14 +47,16 @@
                 </div>
             </ul>
         </nav>
+        <audio class="audio" controls autoplay>
+            <source src="./img/This Is Halloween.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento audio.
+          </audio>
     </header>    
-    
-                            <!--*******************-->
 
+
+    <!--CONTENEDOR MAIN-->
     <main class="main-container">
-        
-        
-        <!-- section one-->
+        <!---SLIDERS-->
 
         <section class="content-section-one">
             <div class="content-section-one__slider">
@@ -86,50 +89,54 @@
 
         </section>
 
-        <!-- section two-->
 
-        <section class="content-section-two">
-            <img class="content-section-two__img-murcielago" src="./img/murcielago2.png" alt="">
-        </section>
+        <!---QUIENES SOMOS--> 
+        <section class="container-quienes-somos">
 
-        <!-- section three-->
-        
-        <section class="content-section-three">
-           
-            
-            <div class="content-section-three__text">
+            <!---murcielagos-de-fondo-->
+            <div class="bats">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+                <img class="murcielagos-volando" src="./img/murcielago.gif" alt="">
+            </div>
+            <!--titulo principal-->
+            <div class="title-principal">
+                <img class="img-murcielago" src="./img/murcielago2.png" alt="">
                 <p>
                     ¡Que comience la fiesta de Halloween!               
                 </p>
             </div> 
             <div class="content-section-three__content-about">
+                <!--animacion-fantasmas-->
                 <div>
-                    <p>asdsadasdsad</p>
+                    <img id="img-calabaza"src="./img/calabazas-img.png" alt="">
+                    <img id="img-ghost" src="./img/fantasma.png" alt="">
                 </div>
-                <div>
-                    <p>oaosdasdas</p>
+                <!--texto-de-lado-->
+                <div class="side-text">
+                    <h1>Quienes somos</h1>
+                    <p>¡Bienvenidos a nuestra tienda de dulces y disfraces! Nos encanta hacer sonreír a nuestros clientes y hacer de cada día una celebración. Ofrecemos una amplia variedad de dulces y chocolates, así como también disfraces de alta calidad para todas las edades y ocasiones especiales. Desde cumpleaños hasta Halloween, ¡tenemos todo lo que necesitas para divertirte y sorprender a tus amigos y familiares!</p>
                 </div>
             </div>
 
         </section>
-        <!-- <section class="content-section-four">
-            <div>
 
+        <!-- PRODUCTOS-->
+
+        <section class="container-productos">
+            <div class="title-productos">
+                <img class="img-murcielago" src="./img/murcielago2.png" alt="">
+                <h1>PRODUCTOS</h1>
             </div>
-        </section> -->
-
-        <!-- section fivee-->
-
-        <section class="content-section-five">
-            <div class="content-section-five__container" >
-                <h1 class="content-section-five__title">
-                    PRODUCTOS
-                </h1>
-                <div class="content-section-five__content-img">
-                    <img class="content-section-five__img-murcielago" src="./img/murcielago2.png" alt="">
-                </div>
-                
-                <ul class="content-section-five__menu">
+            <div>
+                <ul class="container-list-menu">
                     <li>
                         dulces
                     </li>
@@ -143,158 +150,135 @@
                         disfraces de niños
                     </li>
                 </ul> 
-
-
-
-                <div class="content-section-five__container-card">
-                    
-                        <ul class="container-card-list" id="productos-dulces">
-                                
-                            <div class="content-card-individual">
-                                <li class="content-card">
-                                    <img class="img-producto-gato" src="./img/disfraz4.jpg" alt="imagen">
-                                    <img class="img-tela" src="./img/telaraña-img.png" alt="">
-                                    <div class="content-price">
-                                        <span class="title"> candyss</span>
-                                        <span class="price">100$</span>
-                                    </div>
-                                    
-                                    
-                                    
-                                </li>
-                                <button class="btn-add-to-cart"> add to cart</button>
-                            </div>
-                                                       
-                            
-
-
-
-
-                            <div class="content-card-individual">
-                                <li class="content-card">
-                                    <img class="img-producto-gato" src="./img/disfraz1.jpg" alt="imagen">
-                                    <div class="content-price">
-                                        <span class="title"> candyss</span>
-                                        <span class="price">100$</span>
-                                    </div>
-                                </li>
-                                <button class="btn-add-to-cart"> add to cart</button>
-                            </div>
-
-
-                            <div class="content-card-individual">
-                                <li class="content-card">
-                                    <img class="img-producto-gato" src="./img/disfraz2.jpg" alt="imagen">
-    
-                                    <div class="content-price">
-                                        <span class="title"> candyss</span>
-                                        <span class="price">100$</span>
-                                    </div>
-                                </li>
-                            
-                                <button class="btn-add-to-cart"> add to cart</button>
-                            </div>
-                            
-                            
-                            <div class="content-card-individual">
-                                <li class="content-card">
-                                    <img class="img-producto-gato" src="./img/disfraz3.jpg" alt="imagen">
-    
-                                    <div class="content-price">
-                                        <span class="title"> candyss</span>
-                                        <span class="price">100$</span>
-                                    </div>
-                                </li>
-                                
-                                <button class="btn-add-to-cart"> add to cart</button>
-                            </div>
-                            
-                            
-                        </ul>
-
-
-
-
-
-                        
-
-                    
-                </div>
-
-                
             </div>
-            
+            <div class="content-section-five__container" >
+                <div class="content-section-five__container-card">
+                    <ul class="container-card-list" id="productos-dulces">                              
+                        <div class="content-card-individual">
+                            <li class="content-card">
+                                <img class="img-producto-gato" src="./img/disfraz4.jpg" alt="imagen">
+                                <img class="img-tela" src="./img/telaraña-img.png" alt="">
+                                <div class="content-price">
+                                    <span class="title"> candyss</span>
+                                    <span class="price">100$</span>
+                                </div>                                  
+                            </li>
+                            <button class="btn-add-to-cart"> add to cart</button>
+                        </div>
+                        <div class="content-card-individual">
+                            <li class="content-card">
+                                <img class="img-producto-gato" src="./img/disfraz1.jpg" alt="imagen">
+                                <div class="content-price">
+                                    <span class="title"> candyss</span>
+                                    <span class="price">100$</span>
+                                </div>
+                            </li>
+                            <button class="btn-add-to-cart"> add to cart</button>
+                        </div>
+                        <div class="content-card-individual">
+                            <li class="content-card">
+                                <img class="img-producto-gato" src="./img/disfraz2.jpg" alt="imagen">
+
+                                <div class="content-price">
+                                    <span class="title"> candyss</span>
+                                    <span class="price">100$</span>
+                                </div>
+                            </li>
+                        
+                            <button class="btn-add-to-cart"> add to cart</button>
+                        </div>                       
+                        <div class="content-card-individual">
+                            <li class="content-card">
+                                <img class="img-producto-gato" src="./img/disfraz3.jpg" alt="imagen">
+
+                                <div class="content-price">
+                                    <span class="title"> candyss</span>
+                                    <span class="price">100$</span>
+                                </div>
+                            </li>                    
+                            <button class="btn-add-to-cart"> add to cart</button>
+                        </div>
+                        
+                    </ul>                               
+                </div>
+            </div>
         </section >
         
-        <section class="content-section-six">
-            <img class="content-section-six__img-murcielago" src="./img/murcielago2.png" alt="">
-            <div class="content-slide-six__text">
-                <span>
-                    Encuentra
-                </span>
-                <span>
-                    aquí
-                </span>
-                <span>
-                    todo
-                </span>
-                <span>
-                    lo
-                </span>
-                <span>
-                    que
-                </span>
-                <span>
-                    necesitas
-                </span>
-                <span>
-                    para
-                </span>
-                <span>
-                    tener
-                </span>
-                <span>
-                    la
-                </span>
-                <span>
-                    mejor
-                </span>
-                <span>
-                    celebración
-                </span>
-                <span>
-                    de
-                </span>
-                <span>
-                    Halloween
-                </span>
+
+        <!-- PROMOCION-->
+
+        <section class="container-promo">
+            <img class="fondo-promo" src="/img/fondo-promo.png" alt="">
+            <img class="img-murcielago" src="./img/murcielago2.png" alt="">
+            <h1>promociones</h1>
+            <!---video-->
+            <video controls poster="/img/poster-promo.jpg">
+                <source src="/img/halloween.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta video.
+            </video>
+        </section>
+
+
+        <!-- SERVICIOS-->
+
+        <section class="container-servicios">
+            <div class="container-servicios-title">
+                <img class="img-murcielago" src="./img/murcielago2.png" alt="">
+                <h1>SERVICIOS</h1>
             </div>
+            <!--lista-de-servicios-->
+            <ul class="container-servicios__lista-servicios">
+                <li class="container-servicios__card">
+                    <img id="img-servicio1" src="./img/img-servicios.jpg" alt="">
+                    <h2>Venta de Dulce al por Mayor!</h2>
+                    <p> ¿Qué sería de Halloween sin dulces? Tenemos una gran variedad de dulces y chocolates para todos los gustos, desde los clásicos caramelos hasta los más sofisticados bombones de chocolate.</p>
+                </li>
+                <li class="container-servicios__card"> 
+                    <img id="img-servicio2" src="./img/img-servicios2.jpg" alt="">
+                    <h2>Decoración temática</h2>
+                    <p> Si quieres que tu casa se vea tenebrosa y aterradora, tenemos una gran selección de decoraciones de Halloween, desde calabazas hasta murciélagos y arañas. También tenemos luces y proyectores para darle un toque extra a tu decoración.</p>
+                </li>
+                <li class="container-servicios__card">
+                    <img id="img-servicio3" src="./img/img-servicios3.jpg" alt="">
+                    <h2>Alquiler de disfraces</h2>
+                    <p>Tenemos una amplia variedad de disfraces para todas las edades y tamaños, desde los más clásicos hasta los más originales. ¿Quieres ser un vampiro o un zombie este año? ¡Tenemos todo lo que necesitas para lograr el look perfecto!</p>
+                </li>
+                <li class="container-servicios__card">
+                    <img id="img-servicio4" src="./img/img-servicios4.jpg" alt="">
+                    <h2>Maquillaje</h2>
+                    <p>Si quieres darle un toque extra a tu disfraz, ofrecemos servicios de maquillaje especializado para Halloween. Desde maquillaje de vampiro hasta cicatrices y heridas falsas, podemos ayudarte a lograr el look más aterrador.</p>
+                </li>
+            </ul>
         </section>
-        
-        <section class="content-section-seven">
-            <img class="content-section-five__img-murcielago" src="./img/murcielago2.png" alt="">
-            <h2>Contacto</h2>
-        </section>
-        <section class="content-section-eight">
-            
-            <!-- <div class="content-contact1">
-            </div> -->
-            <form class="content-contact3">
+        <!-- CONTACTO-->
+        <section class="container-contacto" >
+            <div class="title-contacto">
+                <img class="img-murcielago" src="./img/murcielago2.png" alt="">
+                <h1>Contacto</h1>
+            </div>
+            <!--Formulario-->
+            <div class="container-form">
+                <form class="content-contact3" >
 
-                <input  type="text" placeholder="Tu nombre" required="required" id="nombre" name="nombre">
-                <input type="email" placeholder="Tu correo" required="required" id="correo" name="correo">
-                <input type="text" placeholder="Tu telefono" required="required" id="telefono" name="telefono">
-
-                <textarea class="content-contact3--contenido" type="text" placeholder="mensaje" required="required" id="correo" name="correo"></textarea>
-                
-                <input id="sutmit" type="submit">
-
-            </form>  
-            <div id="map"></div>
+                    <input  type="text" placeholder="Tu nombre" required id="nombre" name="nombre">
+                    <input type="email" placeholder="Tu correo" required id="correo" name="correo">
+                    <input type="text" placeholder="Tu telefono" required id="telefono" name="telefono">
+    
+                    <textarea  type="text" placeholder="Tu mensaje" required id="mensaje" name="mensaje"></textarea>
+                    
+                    <input id="submit" type="submit" value="Enviar">
+    
+                </form>
+                <!--Mapa-->  
+                <div id="map"></div>
+            </div>
 
         </section>
     </main>
 
+
+
+    <!--CONTENEDOR FOOTER-->
     <footer class="footer-container">
         <div >
             <img src="./img/logo.png " alt="">
@@ -369,21 +353,27 @@
                     Telefono: xxxxxxx
                 </li>
                 <li>
-                    Correo Electronico:xxxxxxxxx
+                    Correo Electronico: 
                 </li>
                 <li>
                     Dirección:xxxxxxxxx
                 </li>
             </ul>
         </div>
+        <img class="footer-img" src="/img/footer-img.png" alt="">
     </footer>
+
+
+    <!--SCRIPTS-->
     <script src="./js/index.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/Form-contact.js"></script>
     <script src="./js/maps.js"></script>
-    
-	<script src="script.js"></script>
+	<script src="./script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBB-o-kUBcV8GESv8x2nulNTqCkkFBB4u8&callback=iniciarMap"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
