@@ -11,7 +11,8 @@
 
 
 
-*{  padding: 0;
+*{  
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 
@@ -33,10 +34,6 @@ body{
     font-family: 'Poppins', sans-serif;
 
 }
-
-
-
-
 
 /*-----------navegacion--------------*/
 
@@ -171,14 +168,14 @@ header{
 
 .audio{
 
-    position: absolute;
-    margin: 0 2rem 0 0;
-    top: 60rem;
+    position: fixed;
+    margin: 2rem 2rem;
+    bottom: 0;
     right: 0;
     color-scheme: black ;
 
     width: 20rem;
-    z-index: 1;
+    z-index: 5;
 }
 
 /*  murcielago*/
@@ -348,15 +345,19 @@ header{
 
 }   
 
+
+
+
+
 .content-section-three__content-about #img-calabaza{
-    padding: 0 100px 0 0;
-    width: 60rem;
+    width: 100%;
 }
 .content-section-three__content-about .side-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    width: 100%;
+
 }
 
 
@@ -374,9 +375,9 @@ header{
 #img-ghost{
 
     position: absolute;
-    left: 10rem;
-    bottom: 5rem;
-    width: 30em;
+    left: 0;
+    bottom: 0;
+    width: 35%;
     opacity: 0.8;
     animation: float 3s ease-in-out infinite;
 
@@ -428,7 +429,6 @@ header{
 .container-productos{
 
     width: 100%;
-    height: 50rem;
     padding: 4rem 0;
     background: var(--body-color);
     font-family: 'Poppins', sans-serif;
@@ -479,7 +479,7 @@ header{
     
 }
 .container-card-list{ 
-    margin: 6rem 0;
+    margin: 5rem 0 0 0 ;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -496,7 +496,7 @@ header{
 
 .content-card-individual{
     box-sizing: border-box;
-    margin: 0 3rem 0 0;
+    margin: 0 3rem 2rem 0;
 
 }
 .content-card{
@@ -789,17 +789,17 @@ header{
     
     display: flex;
     justify-content: center;
-    
-    
+    flex-wrap: wrap;
+
 }
 .container-servicios__card{
     
-    margin: 50px 50px 50px 0;
+    margin: 50px 50px;
     background-color: black;
     list-style: none;
     border-radius: 20px;
     
-    width: 28rem;
+    width: 23rem;
     height: 35rem;
     text-align: center;
     transition: transform 0.3s ease;
@@ -811,12 +811,12 @@ header{
     color: white;
 }
 .container-servicios__card p{
-    
+
     color: white;
 }
 
 .container-servicios__lista-servicios #img-servicio1{
-    width: 100%;
+    width: 23rem;
     height: 15em;
     border-radius:20px;
 
@@ -827,7 +827,7 @@ header{
 
 
 .container-servicios__lista-servicios #img-servicio2{
-    width: 100%;
+    width: 23rem;
     height: 15em;
 
     border-radius:20px;
@@ -837,7 +837,7 @@ header{
 
 .container-servicios__lista-servicios #img-servicio3{
 
-    width: 100%;
+    width: 23rem;
     height: 15em;
     border-radius:20px;
 
@@ -846,7 +846,7 @@ header{
 }
 
 .container-servicios__lista-servicios #img-servicio4{
-    width: 100%;
+    width: 23rem;
     height: 15em;
     border-radius:20px;
 
@@ -862,6 +862,11 @@ header{
     outline:3px #f5f5f565 solid;
     box-shadow: 0 -5px 50px rgba(255, 255, 255, 0.759);
 }
+
+
+
+
+/* ----CONTACTO---------*/
 
 
 
@@ -992,6 +997,7 @@ header{
     position: relative;
     z-index:1;
     overflow: hidden;
+    flex-wrap: wrap;
 
 }
 .footer-container h1{
@@ -1112,6 +1118,510 @@ header{
 
 
 
+@media(max-width:1420px){
+    
+    .container-form{
+        flex-wrap: wrap-reverse;
+        margin: 0 auto ;
+        background: var(--fondo);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+    .content-contact1{
+        padding: 2rem 4rem;
+
+    }
+
+    #map{
+        height: 30rem;
+        width: 40rem;
+    }
+
+    .content-contact3{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .content-contact3 input, textarea{
+        font-family: 'Poppins', sans-serif;
+        padding: 5px 10px;
+        width: 40rem;
+        font-weight: bolder;
+
+        color: #000000;
+        margin: 15px 0;
+        border-radius: 10px;
+        height: 3.5rem;
+
+
+
+
+        font-size: 1rem;
+
+
+        
+    }
+    .content-contact3 textarea{
+
+        height: 7.5rem;
+        resize: none;
+        
+    }
+    /* .content-contact3 input:hover{
+
+        transition: all 0.5s;
+        background-color: #00000012;
+
+    } */
+    .content-contact3 input:focus{
+        outline: 2px solid #ffff;
+    }
+
+    .content-contact3 #submit{  
+        padding: 0;
+        width: 12rem;
+        background-color: #ff5003;
+        cursor: pointer;
+        outline: none;
+        font-weight: bolder;
+        font-size: 1.2em;
+
+        
+    }
+    .content-contact3 #submit:hover{
+        background-color: #fbfbfb;
+        font-weight: bolder;
+
+        color: #000000;
+
+    }
+
+
+
+
+}
+
+@media(max-width:1379px){
+    .container-form{
+        flex-wrap: wrap-reverse;
+        height: 60rem;
+    }
+}
+
+
+
+
+
+@media (max-width:1170px){
+    
+    
+    
+    
+    
+    /*-----------navegacion--------------*/
+
+
+    /*cambio*/
+    .container-nav__item{
+        width: max-content;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 0 1rem 0 0 ;
+        z-index: 5;
+    
+    }
+    .container-nav__a{
+        color: rgba(255, 255, 255, 0.879);
+        text-decoration: none;
+    
+    
+    }
+    .container-nav__a:hover{
+        color: #ff5003;
+    
+    }
+    
+    
+    .content-btn{
+        z-index: 8;
+    
+    }
+    
+    
+    .btn-contacto{
+        text-decoration: none;
+    
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: .2em .625rem .1em .625rem ;
+        color: #ffffff;
+    
+        border: 2px #ffffff dashed;
+        border-radius: 30px;
+        z-index: 15;
+    
+    }
+    
+
+
+    
+    /*  murcielago*/
+    
+    
+    
+    
+    
+    /*---------------main---------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .main-container{
+    
+    
+    
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    
+    /*-------------section 1-------------*/
+    
+    
+    
+    .content-section-one{
+        
+        overflow:hidden ;
+    
+    
+    }
+    .content-section-one__slider{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    
+        position: relative;
+    
+    }
+    
+    
+    
+    .prev-slide{
+        
+        color: white;
+        position: absolute;
+        bottom:60%;
+    
+        z-index: 9;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .content-slide{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-shrink: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .slider-img{
+    
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+    .content-slide p{
+        font-family: var(--font2) !important;
+        margin: 0 200px;
+        position: absolute;
+        color: rgba(255, 255, 255, 0.863);
+        font-size: 22px;
+        top: 50%;
+        bottom: 0;
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+        line-height: 60px;
+    
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.434); /* Color semi-transparente */
+    }
+    
+    
+    
+    .next-slide{
+        color: white;
+        position: absolute;
+        right: 0;
+        bottom:60%;
+    
+        z-index: 9;
+    }
+    
+    /*-------------section 2-------------*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*-------------section 3-------------*/
+    
+    .container-quienes-somos{
+        width: 100%;
+        background: var(--fondo);
+    
+    }
+    
+    .murcielagos-volando{
+        position: absolute;
+        top: -100px;
+        left: 0;
+        max-width: 8%;
+        max-height: 8%;
+        transition: transform 15s ease-in-out;
+    
+    }
+    .img-murcielago{
+        width: 20em;
+    
+    }
+    /*texto intermediario*/
+    
+    .title-principal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    
+    
+    .content-section-three__content-about{
+        margin: 0 1rem;
+        display:  flex;
+        justify-content: space-around;
+        color: #fbfbfb;
+        position: relative;
+    
+    }   
+
+    /*cambio*/
+
+    .content-section-three__content-about #img-calabaza{
+
+        padding: 0;
+        width: 33rem;
+    }
+
+    
+    /*cambio*/
+    .content-section-three__content-about .side-text h1{
+        font-size: 3em;
+        font-family: var(--font2);
+        color: #ff5003;
+    }
+
+
+    /*cambio*/
+    .content-section-three__content-about .side-text p{
+        font-weight: bolder;
+        font-size: 1.2em;
+        line-height: 35px;
+    }
+
+    /*cambio*/
+    #img-ghost{
+        width: 21rem;
+    }
+
+
+
+
+
+
+/*-------PROMOCION------*/
+
+
+
+
+
+
+
+/*cambio*/
+    .container-promo h1{
+        font-size: 3em;
+        font-family: var(--font2);
+        color:#ff5003;
+        margin: 0 0 1.5em 0;
+    }
+/*cambio*/
+    .container-promo video{
+        width: 40rem;
+        z-index: 5;
+
+
+    }
+
+        /* -------SERVICIOS------*/
+
+
+
+    .container-servicios-title h1{
+        font-family: var(--font2);
+        font-size: 3em;
+    }
+
+
+
+    /* ----CONTACTO---------*/
+
+
+    /*-------title-Contacto--------*/
+
+
+
+    .title-contacto h1{
+        font-size: 3em;
+        font-family: var(--font2);
+        color:#ff5003;
+        margin: 0 0 1.5em 0;
+
+    }
+
+
+}
+
+
+
+
+
+
+@media(max-width:1055px){
+    .content-section-three__content-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-section-three__content-about .side-img {
+        margin: 0 auto;
+
+    }
+    #img-ghost{
+        top: 0;
+        margin: 0 auto;
+        right: 0;
+        width: 35%;
+
+    
+
+    }
+
+    .content-section-three__content-about .side-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin:  0 0 30px 0;
+    }
+    .audio{
+        width: 15rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1127,13 +1637,10 @@ header{
 
 
 @media (max-width: 992px){
-    body{
-        
-    }
+
     header{ 
         height: 1rem;
-        outline:2px solid white;
-        background-color: #000000;
+        background:var(--body-color);
         z-index: 100;
     }
     
@@ -1149,7 +1656,7 @@ header{
         align-items: center;
         margin-right: 40px;
         list-style: none;
-        background-color: #ff5003;
+        background-color: #000000;
         position: absolute;
         left: 0;
         top: 50px;
@@ -1192,10 +1699,6 @@ header{
     }
     
     
-    .content-btn{
-        
-    }
-    
     
     .btn-contacto{
         text-decoration: none;
@@ -1215,27 +1718,88 @@ header{
 
         display: block; 
     }
+    .nav-toggle i{
     
+        color: white;
+
+    }
     .nav-menu__visible{
         height: 50rem;
         top: 100%;
         
     }
     
-    .main-container{
-        position: relative;
-        z-index: -2;
-    }
-
 }
 
-@media (max-width: 1532px){
-    .footer-container{
-        flex-wrap: wrap;
+@media(max-width:801px){
+    #map{
+        height: 20rem;
+        width: 30rem;
+    }
+    .content-contact3{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
 
     }
-    .content-contact1__img-ghost{
-        width: 25em;
-        padding: 0;
+
+
+    .content-contact3 input, textarea{
+        font-family: 'Poppins', sans-serif;
+        padding: 5px 10px;
+        width: 30rem;
+        font-weight: bolder;
+
+        color: #000000;
+        margin: 15px 0;
+        border-radius: 10px;
+        height: 3.5rem;
+
+
+
+
+        font-size: 1rem;
+
+
+        
     }
+    .content-contact3 textarea{
+
+        height: 7.5rem;
+        resize: none;
+        
+    }
+    /* .content-contact3 input:hover{
+
+        transition: all 0.5s;
+        background-color: #00000012;
+
+    } */
+    .content-contact3 input:focus{
+        outline: 2px solid #ffff;
+    }
+
+    .content-contact3 #submit{  
+        padding: 0;
+        width: 12rem;
+        background-color: #ff5003;
+        cursor: pointer;
+        outline: none;
+        font-weight: bolder;
+        font-size: 1.2em;
+
+        
+    }
+    .content-contact3 #submit:hover{
+        background-color: #fbfbfb;
+        font-weight: bolder;
+
+        color: #000000;
+
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
